@@ -17,6 +17,7 @@ view: udf {
     timeframes: [
       raw,
       time,
+      time_of_day,
       date,
       week,
       month,
