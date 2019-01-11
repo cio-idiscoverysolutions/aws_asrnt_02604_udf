@@ -27,6 +27,25 @@ view: udf {
     sql: ${TABLE}.DATE_BEG_LCL ;;
   }
 
+
+  measure: min_date {
+    type: date
+    sql: min(${date_beg_lcl_raw}) ;;
+    convert_tz: no
+  }
+
+  measure: max_date {
+    type: date
+    sql: max(${date_beg_lcl_raw}) ;;
+    convert_tz: no
+  }
+
+  measure: unique_ppl {
+    type: count_distinct
+    sql: ${ppl_id} ;;
+  }
+
+
   dimension_group: date_beg_source {
     type: time
     timeframes: [
