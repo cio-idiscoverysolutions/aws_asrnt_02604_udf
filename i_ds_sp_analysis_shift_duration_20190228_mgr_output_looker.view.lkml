@@ -376,6 +376,7 @@ view: i_ds_sp_analysis_shift_duration_20190228_mgr_output_looker {
     ]
     convert_tz: no
     datatype: date
+    allow_fill: no
     sql: ${TABLE}.WeekStart ;;
   }
 
