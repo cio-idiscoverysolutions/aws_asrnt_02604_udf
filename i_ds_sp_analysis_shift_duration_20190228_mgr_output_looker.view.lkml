@@ -216,7 +216,7 @@ view: i_ds_sp_analysis_shift_duration_20190228_mgr_output_looker {
     sql: ${TABLE}."Sum of SoftPhone Last Delta" ;;
   }
 
-  dimension: sum_of_time_stamp_hours_badge_excluded {
+  measure: sum_of_time_stamp_hours_badge_excluded {
     type: number
     sql: ${TABLE}."Sum of TimeStamp Hours (Badge Excluded)" ;;
   }
@@ -239,7 +239,7 @@ view: i_ds_sp_analysis_shift_duration_20190228_mgr_output_looker {
     sql: ${TABLE}."Sum of TimeStamp Hours (Badge Kerberos Excluded)" ;;
   }
 
-  dimension: sum_of_time_stamp_hours_meal_credit_applied_badge_excluded {
+  measure: sum_of_time_stamp_hours_meal_credit_applied_badge_excluded {
     type: number
     sql: ${TABLE}."Sum of TimeStamp Hours (meal credit applied) (Badge Excluded)" ;;
   }
@@ -272,7 +272,7 @@ view: i_ds_sp_analysis_shift_duration_20190228_mgr_output_looker {
     sql: ${TABLE}."Sum of Uncredited Time (badge Kerberos excluded) (HOURS)" ;;
   }
 
-  dimension: sum_of_uncredited_time_meal_credit_applied_badge_excluded_hours {
+  measure: sum_of_uncredited_time_meal_credit_applied_badge_excluded_hours {
     type: number
     sql: ${TABLE}."Sum of Uncredited Time (meal credit applied) (badge excluded) (HOURS)" ;;
   }
@@ -291,7 +291,7 @@ view: i_ds_sp_analysis_shift_duration_20190228_mgr_output_looker {
     sql: ${TABLE}."Sum of Uncredited Time (meal credit applied) (badge included) (Kerberos Excluded) (HOURS)" ;;
   }
 
-  dimension: sum_of_uncredited_time_meal_credit_applied_badge_kerberos_excluded_hours {
+  measure: sum_of_uncredited_time_meal_credit_applied_badge_kerberos_excluded_hours {
     type: number
     sql: ${TABLE}."Sum of Uncredited Time (meal credit applied) (badge Kerberos excluded) (HOURS)" ;;
   }
