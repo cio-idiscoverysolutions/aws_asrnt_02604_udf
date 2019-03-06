@@ -222,10 +222,7 @@ view: i_ds_sp_analysis_shift_duration_20190228_mgr_output_looker {
   }
 
 
-measure:  med_time_stamp_hours_badge_excluded {
-  type:  median
-  sql: ${TABLE}."Sum of TimeStamp Hours (Badge Excluded)" ;;
-}
+
 
   dimension: sum_of_time_stamp_hours_badge_included {
     type: number
@@ -247,12 +244,6 @@ measure:  med_time_stamp_hours_badge_excluded {
     sql: ${TABLE}."Sum of TimeStamp Hours (meal credit applied) (Badge Excluded)" ;;
   }
 
-measure: med_of_time_stamp_hours_meal_credit_applied_badge_excluded {
-  type:  median
-  sql: ${TABLE}."Sum of TimeStamp Hours (meal credit applied) (Badge Excluded)"  ;;
-
-
-}
 
 
 
@@ -286,12 +277,6 @@ measure: med_of_time_stamp_hours_meal_credit_applied_badge_excluded {
     sql: ${TABLE}."Sum of Uncredited Time (meal credit applied) (badge excluded) (HOURS)" ;;
   }
 
-measure: med_of_uncredited_time_meal_credit_applied_badge_excluded_hours  {
-  type:  median
-  sql: ${TABLE}."Sum of Uncredited Time (meal credit applied) (badge excluded) (HOURS)" ;;
-
-
-}
 
 
 
@@ -311,13 +296,6 @@ measure: med_of_uncredited_time_meal_credit_applied_badge_excluded_hours  {
     sql: ${TABLE}."Sum of Uncredited Time (meal credit applied) (badge Kerberos excluded) (HOURS)" ;;
   }
 
-
-measure: med_of_uncredited_time_meal_credit_applied_badge_kerberos_excluded_hours  {
-  type:  median
-  sql:  ${TABLE}."Sum of Uncredited Time (meal credit applied) (badge Kerberos excluded) (HOURS)"  ;;
-
-
-}
 
 
 
