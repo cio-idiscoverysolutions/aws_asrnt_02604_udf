@@ -32,6 +32,10 @@ measure: min_date {
   sql: min(${TABLE}.Date)  ;;
 }
 
+  measure: max_date {
+    type:  date
+    sql: max(${TABLE}.Date)  ;;
+  }
 
   dimension: day_of_week {
     type: string
