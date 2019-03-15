@@ -26,6 +26,13 @@ view: i_ds_sp_analysis_shift_duration_20190228_mgr_output {
     sql: ${TABLE}.Date ;;
   }
 
+
+measure: min_date {
+  type:  min
+  sql: ${TABLE}.Date  ;;
+}
+
+
   dimension: day_of_week {
     type: string
     sql: ${TABLE}."Day of Week" ;;
