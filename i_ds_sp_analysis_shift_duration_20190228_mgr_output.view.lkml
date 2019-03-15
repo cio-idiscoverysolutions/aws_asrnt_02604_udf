@@ -68,7 +68,8 @@ view: i_ds_sp_analysis_shift_duration_20190228_mgr_output {
       week,
       month,
       quarter,
-      year
+      year,
+      time_of_day
     ]
     sql: ${TABLE}."Earliest Kronos Event" ;;
   }
@@ -201,7 +202,8 @@ view: i_ds_sp_analysis_shift_duration_20190228_mgr_output {
       week,
       month,
       quarter,
-      year
+      year,
+      time_of_day
     ]
     sql: ${TABLE}."Latest Kronos Event" ;;
   }
