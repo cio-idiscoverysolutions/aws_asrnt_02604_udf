@@ -395,6 +395,7 @@ measure:  uncredited_time_badge_excluded_hours {
     ]
     convert_tz: no
     datatype: date
+    allow_fill: no
     sql: ${TABLE}.WeekStart ;;
   }
 
