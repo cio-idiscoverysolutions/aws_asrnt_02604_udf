@@ -243,6 +243,15 @@ view: i_ds_sp_analysis_shift_duration_weekly_looker {
     sql: ${TABLE}."Sum of TimeStamp Hours (Badge Kerberos Excluded)" ;;
   }
 
+
+measure: time_stamp_hours_badge_kerberos_excluded   {
+  type:  average
+  sql:   ${TABLE}."Sum of TimeStamp Hours (Badge Kerberos Excluded)";;
+}
+
+
+
+
   dimension: sum_of_time_stamp_hours_meal_credit_applied_badge_excluded {
     type: number
     sql: ${TABLE}."Sum of TimeStamp Hours (meal credit applied) (Badge Excluded)" ;;
@@ -280,6 +289,14 @@ measure:  uncredited_time_badge_excluded_hours {
     type: number
     sql: ${TABLE}."Sum of Uncredited Time (badge Kerberos excluded) (HOURS)" ;;
   }
+
+  measure: uncredited_time_badge_kerberos_excluded_hours  {
+    type:  average
+    sql:   ${TABLE}."Sum of Uncredited Time (badge Kerberos excluded) (HOURS)";;
+  }
+
+
+
 
   dimension: sum_of_uncredited_time_meal_credit_applied_badge_excluded_hours {
     type: number
