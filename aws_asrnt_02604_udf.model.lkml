@@ -10,6 +10,9 @@ datagroup: aws_asrnt_02604_udf_default_datagroup {
 
 persist_with: aws_asrnt_02604_udf_default_datagroup
 
+
+explore: i_ds_sp_analysis_shift_duration_weekly_looker {}
+
 explore: i_ds_sp_analysis_shift_duration_20190228_mgr_output {}
 
 explore: i_ds_sp_analysis_shift_duration_20190306_mgr_output_person_looker {}
