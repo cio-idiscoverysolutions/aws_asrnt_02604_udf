@@ -221,6 +221,13 @@ view: i_ds_sp_analysis_shift_duration_weekly_looker {
     sql: ${TABLE}."Sum of TimeStamp Hours (Badge Excluded)" ;;
   }
 
+
+  measure: time_stamp_hours_badge_excluded {
+    type:  sum
+    sql:  ${TABLE}."Sum of TimeStamp Hours (Badge Excluded)" ;;
+  }
+
+
   dimension: sum_of_time_stamp_hours_badge_included {
     type: number
     sql: ${TABLE}."Sum of TimeStamp Hours (badge included)" ;;
@@ -250,6 +257,14 @@ view: i_ds_sp_analysis_shift_duration_weekly_looker {
     type: number
     sql: ${TABLE}."Sum of Uncredited Time (badge excluded) (HOURS)" ;;
   }
+
+measure:  uncredited_time_badge_excluded_hours {
+  type:  sum
+  sql:  ${TABLE}."Sum of Uncredited Time (badge excluded) (HOURS)";;
+}
+
+
+
 
   dimension: sum_of_uncredited_time_badge_included_hours {
     type: number
