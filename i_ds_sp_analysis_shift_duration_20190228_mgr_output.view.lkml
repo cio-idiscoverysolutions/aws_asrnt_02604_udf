@@ -288,7 +288,9 @@ measure: min_date {
   }
 
   dimension: soft_phone_first_delta {
-    type: number
+    type: tier
+    tiers: [-20, -15, -10, -5, 0, 5, 10]
+    style:  integer
     sql: ${TABLE}."SoftPhone First Delta" ;;
   }
 
