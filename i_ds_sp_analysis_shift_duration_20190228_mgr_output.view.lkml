@@ -277,10 +277,28 @@ measure: min_date {
     sql: ${TABLE}."PostWrap First Delta" ;;
   }
 
+  dimension: post_wrap_first_delta_tier {
+    type: tier
+    tiers: [-75, -50, -25, -20, -15, -10, -5, 0, 5, 10, 15, 20, 25]
+    style:  integer
+    sql: ${TABLE}."PostWrap First Delta" ;;
+  }
+
+
+
   dimension: post_wrap_last_delta {
     type: number
     sql: ${TABLE}."PostWrap Last Delta" ;;
   }
+
+
+  dimension: post_wrap_last_delta_tier {
+    type: tier
+    tiers: [-75, -50, -25, -20, -15, -10, -5, 0, 5, 10]
+    style:  integer
+    sql: ${TABLE}."PostWrap Last Delta" ;;
+  }
+
 
   dimension: ppl_id {
     type: number
