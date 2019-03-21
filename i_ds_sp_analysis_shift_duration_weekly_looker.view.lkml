@@ -296,6 +296,15 @@ measure:  uncredited_time_badge_excluded_hours {
   }
 
 
+  dimension: sum_of_uncredited_time_badge_kerberos_excluded_hours_tier {
+    type: tier
+    tiers: [0,2,4,6,8,10]
+    style: integer
+    sql: ${TABLE}."Sum of Uncredited Time (badge Kerberos excluded) (HOURS)" ;;
+  }
+
+
+
 
 
   dimension: sum_of_uncredited_time_meal_credit_applied_badge_excluded_hours {
