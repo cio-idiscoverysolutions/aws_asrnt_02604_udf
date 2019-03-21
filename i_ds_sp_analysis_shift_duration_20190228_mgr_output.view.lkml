@@ -294,10 +294,31 @@ measure: min_date {
     sql: ${TABLE}."SoftPhone First Delta" ;;
   }
 
+  dimension: soft_phone_first_delta_tier {
+    type: tier
+    tiers: [-75, -50, -25, -20, -15, -10, -5, 0, 5, 10]
+    style:  integer
+    sql: ${TABLE}."SoftPhone First Delta" ;;
+  }
+
+
+
   dimension: soft_phone_last_delta {
     type: number
     sql: ${TABLE}."SoftPhone Last Delta" ;;
   }
+
+
+  dimension: soft_phone_last_delta_tier {
+    type: tier
+    tiers: [-75, -50, -25, -20, -15, -10, -5, 0, 5, 10]
+    style:  integer
+    sql: ${TABLE}."SoftPhone Last Delta" ;;
+  }
+
+
+
+
 
   dimension: time_stamp_hours_badge_excluded {
     type: number
