@@ -128,6 +128,15 @@ measure: min_date {
     sql: ${TABLE}."First Activity after Earliest Badge Swipe Delta" ;;
   }
 
+  dimension: first_activity_after_earliest_badge_swipe_delta_tier {
+    type: tier
+    tiers: [-75, -50, -25, -20, -15, -10, -5, 0, 5]
+    style:  integer
+    sql: ${TABLE}."First Activity after Earliest Badge Swipe Delta" ;;
+  }
+
+
+
   dimension: first_activity_excluding_kerberos_after_earliest_badge_swipe_delta {
     type: number
     sql: ${TABLE}."First Activity (excluding Kerberos) after Earliest Badge Swipe Delta" ;;
