@@ -150,6 +150,13 @@ view: id_s_vw_looker_employee_profile {
     sql: ${TABLE}."Uncredited Time Day" ;;
   }
 
+
+measure: uncredited_time_day_sum {
+  type:  number
+  sql: sum(${TABLE}."Uncredited Time Day") ;;
+}
+
+
   dimension: uncredited_time_meal_credit_applied_badge_kerberos_excluded {
     type: number
     sql: ${TABLE}."Uncredited Time (Meal Credit Applied) (Badge Kerberos excluded)" ;;
