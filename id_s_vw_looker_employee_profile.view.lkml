@@ -25,7 +25,8 @@ view: id_s_vw_looker_employee_profile {
       week,
       month,
       quarter,
-      year
+      year,
+      time_of_day
     ]
     sql: ${TABLE}."Earliest Kronos Event" ;;
   }
@@ -39,7 +40,8 @@ view: id_s_vw_looker_employee_profile {
       week,
       month,
       quarter,
-      year
+      year,
+      time_of_day
     ]
     sql: ${TABLE}."Earliest PostWrap Event" ;;
   }
@@ -53,7 +55,8 @@ view: id_s_vw_looker_employee_profile {
       week,
       month,
       quarter,
-      year
+      year,
+      time_of_day
     ]
     sql: ${TABLE}."Earliest SoftPhone Event" ;;
   }
@@ -77,7 +80,8 @@ view: id_s_vw_looker_employee_profile {
       week,
       month,
       quarter,
-      year
+      year,
+      time_of_day
     ]
     sql: ${TABLE}."Latest Kronos Event" ;;
   }
@@ -91,7 +95,8 @@ view: id_s_vw_looker_employee_profile {
       week,
       month,
       quarter,
-      year
+      year,
+      time_of_day
     ]
     sql: ${TABLE}."Latest PostWrap Event" ;;
   }
@@ -105,7 +110,8 @@ view: id_s_vw_looker_employee_profile {
       week,
       month,
       quarter,
-      year
+      year,
+      time_of_day
     ]
     sql: ${TABLE}."Latest SoftPhone Event" ;;
   }
