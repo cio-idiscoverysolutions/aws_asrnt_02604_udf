@@ -158,7 +158,7 @@ view: id_s_vw_looker_employee_profile {
 
   dimension: uncredited_time_bucket_minutes {
     type: tier
-    tiers: [0, 5, 15, 30, 60, 120, 240, 480, 720]
+    tiers: [0, 1, 5, 10, 15, 30, 60, 120, 480]
     style:  integer
     sql: ${TABLE}."Uncredited Time (Meal Credit Applied) (Badge Kerberos excluded)" ;;
   }
