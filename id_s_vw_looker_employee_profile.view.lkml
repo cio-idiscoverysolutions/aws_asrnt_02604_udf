@@ -155,6 +155,16 @@ view: id_s_vw_looker_employee_profile {
     sql: ${TABLE}."Uncredited Time (Meal Credit Applied) (Badge Kerberos excluded)" ;;
   }
 
+
+  dimension: uncredited_time_bucket_minutes {
+    type: tier
+    tiers: [0, 5, 15, 30, 60, 120, 240, 480, 720]
+    style:  integer
+    sql: ${TABLE}."Uncredited Time (Meal Credit Applied) (Badge Kerberos excluded)" ;;
+  }
+
+
+
   measure: count {
     type: count
     drill_fields: [employee_full_name]
