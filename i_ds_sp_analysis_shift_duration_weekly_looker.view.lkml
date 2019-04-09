@@ -262,6 +262,17 @@ measure: time_stamp_hours_badge_kerberos_excluded   {
     sql: ${TABLE}."Sum of TimeStamp Hours (meal credit applied) (Badge Kerberos Excluded)" ;;
   }
 
+  dimension: sum_of_time_stamp_hours_meal_credit_applied_badge_kerberos_excluded_tier {
+    type: tier
+    tiers: [20, 30, 35, 40, 45, 50]
+    style:  integer
+    sql: ${TABLE}."Sum of TimeStamp Hours (meal credit applied) (Badge Kerberos Excluded)" ;;
+  }
+
+
+
+
+
   dimension: sum_of_uncredited_time_badge_excluded_hours {
     type: number
     sql: ${TABLE}."Sum of Uncredited Time (badge excluded) (HOURS)" ;;
