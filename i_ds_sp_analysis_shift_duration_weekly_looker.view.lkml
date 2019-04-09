@@ -427,4 +427,10 @@ measure:  uncredited_time_badge_excluded_hours {
     type: count
     drill_fields: [employee_full_name]
   }
+
+  measure: count_distinct {
+    type:  count_distinct
+    sql: ${TABLE}."employee full name" ;;
+  }
+
 }
