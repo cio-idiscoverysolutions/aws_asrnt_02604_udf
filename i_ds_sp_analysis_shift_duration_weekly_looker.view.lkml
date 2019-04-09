@@ -430,7 +430,7 @@ measure:  uncredited_time_badge_excluded_hours {
 
   measure: count_distinct {
     type:  count_distinct
-    sql: ${TABLE}."employee full name" ;;
+    sql: ${TABLE}."WeekStart" ;;
   }
 
 }
