@@ -270,6 +270,10 @@ measure: time_stamp_hours_badge_kerberos_excluded   {
   }
 
 
+  measure: sum_of_time_stamp_hours_meal_credit_applied_badge_kerberos_excluded_avg {
+    type: average
+    sql: ${TABLE}."Sum of TimeStamp Hours (meal credit applied) (Badge Kerberos Excluded)" ;;
+  }
 
 
 
